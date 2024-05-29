@@ -27,7 +27,7 @@ class YelpScraper:
         i.e, https://www.yelp.com/search?find_desc=&find_loc=Portland%2C+ME
 
         It works in two phases, first it will grab all the restaurant links on the "base_url" and all sebsequent urls.
-        Second, it will visit each restaurant link and grab the most recent 300 reviews (or the total amount if < 800)
+        Second, it will visit each restaurant link and grab the most recent 300 reviews (or the total amount if < 300)
     """
     def __init__(self, base_url) -> None:
         """
@@ -119,7 +119,7 @@ class YelpScraper:
         # iterate over links
         for href in self.hrefs:
 
-            # only keep if link if it contains this
+            # only keep if link contains this
             if "https://www.yelp.com/biz/" in href:
                 hrefs.append(href)
             else:

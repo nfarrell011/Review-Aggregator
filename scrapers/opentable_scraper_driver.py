@@ -7,22 +7,40 @@
 """
 # packages and modules
 import pandas as pd
+from pathlib import Path
 from opentable_scraper_class import OpenTableScraper
 
 # main
 def main():
-    URL = f"https://www.opentable.com/s?dateTime=2024-05-10T17%3A00%3A00&covers=2&metroId=3569&regionIds%5B%5D= \
-            10734&neighborhoodIds%5B%5D=&term=&shouldUseLatLongSearch=false&originCorrelationId=a860a \
-            793-437a-4bed-b01b-3a9afc98fdcf"
+    # get the base dir
+    HOME = Path.cwd()
 
-    scraper = OpenTableScraper(URL)
+    # set the base_url to be OpenTable homepage    
+    URL = f"https://www.opentable.com"
+
+    # set the regoin you want to scrape
+    region = "Portland, ME"
+
+    # instaniate scraper
+    scraper = OpenTableScraper(URL, region)
+    scraper.go_to_region()
     scraper.get_restaurant_urls()
     for href in scraper.hrefs:
+        scraper.get_restaurant_data(href)
         scraper.scrape_individual_restaurant(href)
 
-    df = pd.DataFrame(scraper.results_list)
-    SAVE_PATH = "scrapers/raw/open_table_data.csv"
-    df.to_csv(SAVE_PATH)
+    # modify the regoin variable to use as part of file name
+    region_modified = scraper.region.replace(", ", "_")
+    
+    # save review data as csv
+    open_table_review_data_df = pd.DataFrame(scraper.review_data)
+    SAVE_PATH = HOME / "raw" / f"open_table_review_data_{region_modified}_{scraper.date}.csv"
+    open_table_review_data_df.to_csv(str(SAVE_PATH))
+
+    # save restaurant data as csv
+    open_table_restaurant_data_df = pd.DataFrame(scraper.restaurant_data)
+    SAVE_PATH = HOME / "raw" / f"open_table_restaurant_data_{region_modified}_{scraper.date}.csv"
+    open_table_restaurant_data_df.to_csv(str(SAVE_PATH))
 
 if __name__ == "__main__":
     main()

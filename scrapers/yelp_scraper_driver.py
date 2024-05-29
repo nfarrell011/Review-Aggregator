@@ -22,7 +22,7 @@ def main():
 
 
     df = pd.DataFrame(scraper.results_list)
-    SAVE_PATH = "scrapers/raw/yelp_data.csv"
+    SAVE_PATH = "review_app/raw/yelp_data.csv"
     df.to_csv(SAVE_PATH)
 
 if __name__ == "__main__":

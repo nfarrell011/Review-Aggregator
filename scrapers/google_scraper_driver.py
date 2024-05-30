@@ -21,7 +21,8 @@ def main():
 
     scraper = GoogleScraper()
     scraper.google_search()
-    scraper.open_restuarant_page()
+    scraper.get_reviews()
+    scraper.extract_review_data()
     scraper.next_page()
     
 

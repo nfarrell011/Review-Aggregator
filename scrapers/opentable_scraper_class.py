@@ -253,7 +253,10 @@ class OpenTableScraper():
                 restaurant_name = None
         except:
             print(f'Error getting restaurant name: {e}')
-            restaurant_name = None        
+            restaurant_name = None
+
+        ###################
+        print(f"Getting Restaurant data for: {restaurant_name}")     
 
         # get the price range
         try:
@@ -349,6 +352,7 @@ class OpenTableScraper():
                 data = json.loads(name.string)
                 restaurant_name = data.get('name', 'name_not_found')
 
+            print(f'Now scrapping: {restaurant_name}')
             print(f'This restuarant has: {num_pages} pages of reviews.')
             print(f'Currently scraping page #{tracker}')
 

@@ -34,12 +34,12 @@ def main():
     
     # save review data as csv
     open_table_review_data_df = pd.DataFrame(scraper.review_data)
-    SAVE_PATH = HOME / "raw" / f"open_table_review_data_{region_modified}_{scraper.date}.csv"
+    SAVE_PATH = HOME / "data" /"raw" / f"open_table_review_data_{region_modified}_{scraper.date}.csv"
     open_table_review_data_df.to_csv(str(SAVE_PATH))
 
     # save restaurant data as csv
     open_table_restaurant_data_df = pd.DataFrame(scraper.restaurant_data)
-    SAVE_PATH = HOME / "raw" / f"open_table_restaurant_data_{region_modified}_{scraper.date}.csv"
+    SAVE_PATH = HOME / "data" / "raw" / f"open_table_restaurant_data_{region_modified}_{scraper.date}.csv"
     open_table_restaurant_data_df.to_csv(str(SAVE_PATH))
 
 if __name__ == "__main__":

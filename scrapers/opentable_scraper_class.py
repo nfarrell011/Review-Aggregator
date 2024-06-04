@@ -40,7 +40,7 @@ class OpenTableScraper():
         OpenTableScraper initializer.
 
         Args:
-            base_url: (str) - This is where the scraper will start. It should be a page that lists restaurant links.
+            base_url: (str) - This is where the scraper will start. It should be the OpenTable homepage.
 
         Attributes:
             hrefs: (list) - This is a list of individual restaurant links that are extracted by the first phase of the
@@ -303,7 +303,6 @@ class OpenTableScraper():
         results_dict['tags'] = tags_list
         results_dict['region'] = self.region
         results_dict['restaurant_name'] = restaurant_name
-        print(results_dict)
         self.restaurant_data.append(results_dict)
 
     def scrape_individual_restaurant(self, res_url):

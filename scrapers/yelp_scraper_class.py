@@ -49,7 +49,8 @@ class YelpScraper:
         """
         self.hrefs = []
         self.base_url = base_url
-        self.service = Service(executable_path = "chromedriver-mac-arm64/chromedriver")
+        #self.service = Service(executable_path = "chromedriver-mac-arm64/chromedriver")
+        self.service = Service(ChromeDriverManager().install())
         self.driver = webdriver.Chrome(service = self.service)
         self.results_list = []
         self.reviews = None

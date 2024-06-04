@@ -1,5 +1,8 @@
 ## README: Database Manager
 ___
+This document outlines what data is being tracked in ```restaurant_review_database.db```, and how that data is organized. The relational schema can be used to design and write queries to access the data using SQL....
+___
+
 
 ### Requirements:
 
@@ -17,6 +20,12 @@ ___
 
 ### Entity Relationship Diagram:
 <img src="figs/review_agg_erd.png">
+
+___
+
+### Resultant Relational Schema
+
+<img src ="figs/review_agg_schema.png">
 
 
 

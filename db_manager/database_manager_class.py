@@ -3,7 +3,6 @@ from pathlib import Path
 import os
 import csv
 
-
 class RestaurantReviewDB:
     """
         
@@ -23,7 +22,7 @@ class RestaurantReviewDB:
         
         """
         # set the path to the db folder
-        DB_FOLDER_PATH = self.HOME / "data" / "curated"
+        DB_FOLDER_PATH = self.HOME / "data" / "database"
 
         # check if the folder exists, if not create
         os.makedirs(DB_FOLDER_PATH, exist_ok = True)
@@ -46,7 +45,7 @@ class RestaurantReviewDB:
         create_site_origin_table =      """
                                         CREATE TABLE IF NOT EXISTS site_origin(
                                                 id INTEGER PRIMARY KEY AUTOINCREMENT,
-                                                site_name TEXT
+                                                site_name TEXT UNIQUE
                                                 )
                                         """
         create_reviewer_table =         """
@@ -105,7 +104,7 @@ class RestaurantReviewDB:
         
         """
         # set path to data
-        PATH_TO_CSV = str(self.HOME / "data" /"raw" / csv_file_name)
+        PATH_TO_CSV = str(self.HOME / "data" /"curated" / csv_file_name)
 
         # connect to db
         self.connect()
@@ -263,7 +262,7 @@ class RestaurantReviewDB:
                 # data container
                 db_row = []
 
-                # get the reviwer name, res name, and site origin
+                # get the reviewer name, res name, and site origin
                 reviewer_name = row[8].strip()
                 restaurant_name = row[9]
                 site_origin = row[10]
@@ -309,10 +308,10 @@ review_csv = "open_table_review_data_Portland_ME_2024-05-30.csv"
 ResDB = RestaurantReviewDB(db_file_name)
 ResDB.connect()
 ResDB.create_tables()
-ResDB.update_restuarant_table(restaurant_csv)
+#ResDB.update_restuarant_table(restaurant_csv)
 ResDB.update_site_origin_table(review_csv)
-ResDB.update_reviewer_table(review_csv)
-ResDB.update_restaurant_review_table(review_csv)
+#ResDB.update_reviewer_table(review_csv)
+#ResDB.update_restaurant_review_table(review_csv)
 
 query = """
             SELECT 

@@ -1,0 +1,241 @@
+,name,price_point,tags
+0,Thistle & Grouse,,"['Gastropubs', 'Wine Bars', 'Cocktail Bars']"
+1,Street & Co.,$$$,"['Seafood', 'New American', 'Mediterranean']"
+2,Duckfat,$$,['New American']
+3,The Highroller Lobster,$$,"['Seafood', 'American', 'Bars']"
+4,Eventide Oyster Company,$$,['Seafood']
+5,Central Provisions,$$$,"['Tapas/Small Plates', 'Cocktail Bars']"
+6,Scales,$$$,"['Seafood', 'New American', 'Beer, Wine & Spirits']"
+7,Wayside Tavern,,['New American']
+8,Bird & Co,$$,['Tacos']
+9,Luke's Lobster Portland Pier,$$,"['Seafood', 'Soup', 'Sandwiches']"
+10,The Knotted Apron,,"['French', 'Italian', 'Cocktail Bars']"
+11,Fore Street,$$$,"['New American', 'Seafood']"
+12,The Honey Paw,$$,"['Asian Fusion', 'New American', 'Noodles']"
+13,Twelve,$$$$,['New American']
+14,Via Vecchia,$$,"['Italian', 'Tapas/Small Plates', 'Cocktail Bars']"
+15,Blyth & Burrows,$$,"['Cocktail Bars', 'Tapas Bars']"
+16,Salt Yard Cafe & Bar,,"['New American', 'Breakfast & Brunch', 'Cocktail Bars']"
+17,Paper Tiger,,"['Tapas/Small Plates', 'Asian Fusion']"
+18,Boda,$$,"['Thai', 'Tapas/Small Plates']"
+19,Bread & Friends,,"['Bakeries', 'Coffee & Tea', 'New American']"
+20,The Independent Ice,$$,"['Whiskey Bars', 'Cocktail Bars', 'Gastropubs']"
+21,Evo Kitchen + Bar,$$$$,"['Tapas/Small Plates', 'Mediterranean', 'Bars']"
+22,Maine Oyster Company,,['Seafood']
+23,Sur Lie,$$,"['New American', 'Tapas Bars']"
+24,Terlingua,$$,"['Barbeque', 'Latin American', 'Bars']"
+25,Leeward,,['Italian']
+26,Izakaya Minato,$$$,['Izakaya']
+27,Solo Italiano,$$$,"['Italian', 'Bars']"
+28,Crispy Gai,$$,"['Chicken Wings', 'Sandwiches', 'Bars']"
+29,Quanto Basta,,"['Italian', 'Pizza', 'Food Trucks']"
+30,Empire Chinese Kitchen,$$,"['Dim Sum', 'Cantonese']"
+31,Union Restaurant,$$,"['Cocktail Bars', 'New American', 'Breakfast & Brunch']"
+32,Isa Bistro,$$,"['New American', 'New Mexican Cuisine']"
+33,Papi,$$,"['Cocktail Bars', 'Puerto Rican']"
+34,Chaval,$$$,"['Spanish', 'French', 'Cocktail Bars']"
+35,The North Point,$$,"['Lounges', 'American']"
+36,Butcher Burger,,"['Burgers', 'Sandwiches', 'Tacos']"
+37,N To Tail,$$$,"['Korean', 'Barbeque', 'Tapas/Small Plates']"
+38,DiMillo's On the Water,$$$,"['Seafood', 'Italian', 'New American']"
+39,Bramhall,$$,"['Bars', 'American']"
+40,Smoked Portland,,"['Chicken Shop', 'Beer Bar', 'Cocktail Bars']"
+41,The Great Lost Bear,$$,"['American', 'Beer Bar', 'Desserts']"
+42,Hot Suppa,$$,"['Breakfast & Brunch', 'American', 'Comfort Food']"
+43,Miyake,$$$,"['Japanese', 'Sushi Bars']"
+44,Jing Yan,,['Chinese']
+45,Keg and kraken,$$,"['Sushi Bars', 'Thai', 'Bars']"
+46,Quiero Cafe,,"['Latin American', 'Empanadas']"
+47,Mash Tun,$$,"['Burgers', 'Breweries']"
+48,The Thirsty Pig,$$,"['Beer, Wine & Spirits', 'American', 'Bars']"
+49,Ribollita,$$,"['Italian', 'Seafood']"
+50,Continental,,"['British', 'Beer Bar', 'Cocktail Bars']"
+51,Flatbread Company,$$,"['Pizza', 'Salad', 'Beer Bar']"
+52,Wilson County Barbecue,$$,['Barbeque']
+53,The Armory Lounge,$$,"['Lounges', 'New American']"
+54,Lazzari,$$,"['Bars', 'Pizza', 'Italian']"
+55,The Green Elephant,$$,"['Vegetarian', 'Vegan', 'Asian Fusion']"
+56,Rigby Yard,$$,"['Beer, Wine & Spirits', 'American', 'Coffee & Tea']"
+57,Tipo,$$,"['Italian', 'Pizza', 'Cocktail Bars']"
+58,Kume,,"['Japanese', 'Sushi Bars', 'Steakhouses']"
+59,The King's Head,$$,"['American', 'Pubs']"
+60,Black Cow,$$,"['Burgers', 'Cocktail Bars', 'American']"
+61,Woodford F & B,$$$,"['New American', 'Bars', 'Seafood']"
+62,Bite Into Maine,$$$,"['Seafood', 'Food Trucks']"
+63,Sichuan Kitchen,$$,['Szechuan']
+64,Cantina Calafia,,['Tacos']
+65,Novel,,"['Cafes', 'Bookstores', 'Cocktail Bars']"
+66,Dok Mali Thai Kitchen,,"['Thai', 'Salad', 'Chicken Wings']"
+67,The East Ender,$$,"['Burgers', 'Seafood', 'Karaoke']"
+68,Bar Futo,,"['Bars', 'Japanese']"
+69,Mainely Noods,$$,['Noodles']
+70,Mi Sen Noodle Bar,$$,"['Thai', 'Asian Fusion', 'Noodles']"
+71,Bite Into Maine,$$,"['Seafood', 'Sandwiches']"
+72,Room for Improvement,,"['Cocktail Bars', 'Hot Dogs', 'Beer Bar']"
+73,Becky's Diner,$$,"['American', 'Breakfast & Brunch']"
+74,SoPo Seafood Market & Raw Bar,$$,"['Seafood', 'Live/Raw Food', 'Seafood Markets']"
+75,CÔNG TỬ BỘT,$$,['Vietnamese']
+76,Regards,,"['Cocktail Bars', 'New American', 'Seafood']"
+77,MAMI PORTLAND,$$,"['Japanese', 'Food Trucks']"
+78,Gilbert's Chowder House,$$,['Seafood']
+79,kuno,,"['Food Trucks', 'Thai', 'Sandwiches']"
+80,Old Port Sea Grill & Raw Bar,$$,"['Seafood', 'Bars']"
+81,Paella seafood,,['Seafood']
+82,Lenora,,"['Mexican', 'Breakfast & Brunch', 'Cocktail Bars']"
+83,Eighteen95,,['Breakfast & Brunch']
+84,Taco Escobarr,$$,['Tacos']
+85,Salvage BBQ,$$,['Barbeque']
+86,Bayside American Cafe,$$,"['Breakfast & Brunch', 'Sandwiches', 'Wraps']"
+87,Il Leone,,['Pizza']
+88,Portland Hunt & Alpine Club,$$,"['Cocktail Bars', 'Gastropubs']"
+89,Pai Men Miyake,$$,"['Sushi Bars', 'Ramen']"
+90,Flores Restaurant,$,['Salvadoran']
+91,The Grill Room,$$$,"['Steakhouses', 'New American', 'Bars']"
+92,Brickyard Hollow Brewing Company,$$,"['Pizza', 'Brewpubs']"
+93,Little Tap House,$$,"['Gastropubs', 'New American']"
+94,City Farmhouse Kitchen and Bar,$$,['American']
+95,Maiz Colombian Street Food - Forest Ave,$$,['Colombian']
+96,The Friendly Toast - Portland,$$,"['Breakfast & Brunch', 'Diners', 'Acai Bowls']"
+97,The Well at Jordan's Farm,$$$,['New American']
+98,David's Opus Ten,$$$$,['New American']
+99,Nom Cafe,,"['Modern European', 'Breakfast & Brunch']"
+100,Thai Tree,,"['Thai', 'Desserts', 'Coffee & Tea']"
+101,Harbor Bistro + Terrace,,"['Seafood', 'Breakfast & Brunch', 'Cocktail Bars']"
+102,JP's Bistro,,"['French', 'Seafood']"
+103,The Front Room,$$,"['American', 'Breakfast & Brunch']"
+104,North43Bistro,$$,['New American']
+105,Jefe Juan's,,['Mexican']
+106,Volcano Restaurant Bar & Grill,,"['Bars', 'American']"
+107,Inkwell,$$$,"['Tapas/Small Plates', 'Cocktail Bars']"
+108,Mazzat Restaurant,,['Mediterranean']
+109,Roma Cafe,$$$,['Italian']
+110,Waypoint Restaurant,,"['American', 'Bars', 'Seafood']"
+111,Tres Leches Cakes Flor,,"['Bakeries', 'Mexican']"
+112,Little Pig,,['Thai']
+113,Tomaso's Canteen,$$,"['Bars', 'American']"
+114,David's Restaurant,$$$,"['New American', 'Seafood']"
+115,Tuscan Table,$$,['Italian']
+116,The Porthole Restaurant & Pub,$$,"['Diners', 'Seafood', 'Breakfast & Brunch']"
+117,Casita Corazon,,['Mexican']
+118,Mitr Ping Yang Thai Kitchen,,['Thai']
+119,Smalls,,['Cafes']
+120,Low Key,,"['Bars', 'Seafood', 'Sandwiches']"
+121,Ugly Duckling,,"['Bakeries', 'Breakfast & Brunch']"
+122,Taco Trio,$,['Mexican']
+123,Nosh Taco,,['Tacos']
+124,The Sinful Kitchen,$$,"['Breakfast & Brunch', 'Coffee & Tea', 'Gluten-Free']"
+125,The Corner Room,$$,"['Italian', 'Pizza', 'Bars']"
+126,David's 388 - South Portland,$$,"['New American', 'Bars', 'Desserts']"
+127,Angoor Wine Bar,,"['Wine Bars', 'Venues & Event Spaces', 'Tapas Bars']"
+128,Coals Bayside,$$,['Pizza']
+129,Tacos Del Seoul,$,"['Food Trucks', 'Korean', 'Mexican']"
+130,Benkay Japanese Restaurant & Sushi Bar,$$,"['Japanese', 'Sushi Bars']"
+131,Henry's Public House,,"['Cocktail Bars', 'Wine Bars', 'American']"
+132,Oun Lido’s,,"['Cambodian', 'Salad', 'Coffee & Tea']"
+133,Old Port Noodle House,$$,"['Vietnamese', 'Thai', 'Noodles']"
+134,Clam Bar,,['Seafood']
+135,The Frog & Turtle,$$,"['French', 'Breakfast & Brunch', 'Gastropubs']"
+136,Saeng Thai House,$$,"['Thai', 'Asian Fusion']"
+137,Crunchy Poké,$$,"['Sushi Bars', 'Ramen', 'Poke']"
+138,De Vons,,['French']
+139,Low Stakes Lodge,,"['American', 'Steakhouses']"
+140,Portland Lobster Co,$$,['Seafood']
+141,Genji Ramen,,"['Mexican', 'Ramen', 'Sushi Bars']"
+142,Kozeta's Restaurant,$,"['Pizza', 'Greek', 'Breakfast & Brunch']"
+143,Saltwater Grille,$$$,"['American', 'Seafood', 'Cocktail Bars']"
+144,Red Sea Restaurant,$$,['African']
+145,Dutch's,$$,"['Breakfast & Brunch', 'Sandwiches']"
+146,Slab Sicilian Street Food,$$,"['Bars', 'Pizza', 'Italian']"
+147,Bistro Leluco,,"['Bars', 'Seafood', 'Mediterranean']"
+148,Anoche,,"['Basque', 'Cocktail Bars']"
+149,J's Oyster,$$,['Seafood']
+150,Noble Barbecue,$$,"['Barbeque', 'Sandwiches']"
+151,Other Side Diner,$$,"['Diners', 'Breakfast & Brunch', 'Greek']"
+152,Port 65 Kitchen & Bar,,"['Diners', 'Breakfast & Brunch', 'Bars']"
+153,Ocotillo,,"['Breakfast & Brunch', 'Venues & Event Spaces', 'Cocktail Bars']"
+154,Local 188,$$,"['Spanish', 'Bars', 'Mediterranean']"
+155,Camp Pennant,,"['Brewpubs', 'Distilleries', 'Pizza']"
+156,Sun Vietnamese Restaurant,$,"['Vietnamese', 'Salad', 'Chicken Wings']"
+157,LB Kitchen,$$,"['Cafes', 'Juice Bars & Smoothies', 'Breakfast & Brunch']"
+158,Pattaya Kitchen,,"['Asian Fusion', 'Thai', 'Noodles']"
+159,Andy's Old Port Pub,$$,"['Pubs', 'New American', 'Music Venues']"
+160,Sal De La Tierra,,"['Latin American', 'Mexican']"
+161,Magissa,,['Greek']
+162,Dina’s Cuisine,,"['Mediterranean', 'Middle Eastern', 'Bakeries']"
+163,Cafe Louis,,"['Caribbean', 'Breakfast & Brunch']"
+164,The Local Press,$,"['Soup', 'Sandwiches']"
+165,Docks Seafood,$$,"['Seafood', 'Seafood Markets']"
+166,Nura Hummus and Falafel,,"['Middle Eastern', 'Salad', 'Sandwiches']"
+167,Yosaku,$$,"['Japanese', 'Sushi Bars']"
+168,Marcy's Diner,$$,"['Diners', 'American', 'Breakfast & Brunch']"
+169,Porttown Public House & Coffee Bar,,"['Bars', 'Pizza', 'Coffee & Tea']"
+170,Alto Terrace Bar + Kitchen,,"['Beer, Wine & Spirits', 'Breakfast & Brunch', 'Cocktail Bars']"
+171,The Toku Truck,,"['Food Trucks', 'Juice Bars & Smoothies', 'Sandwiches']"
+172,CBG Bar & Grill,,"['American', 'Bars']"
+173,Sicilian Table,$$$,"['Mediterranean', 'Italian']"
+174,,,
+175,OTTO,$$,"['Pizza', 'Gluten-Free', 'Vegetarian']"
+176,BenReuben’s Knishery,,['Delis']
+177,Nonesuch River Brewing,$$,"['Breweries', 'Pubs', 'New American']"
+178,Brookside Food And Drink,,"['Salad', 'Mexican', 'Sandwiches']"
+179,Bar Publica,,"['Latin American', 'Bars']"
+180,Rio Bravo Tacos and Tequila,$$,['Mexican']
+181,Knitting Nook,,"['Knitting Supplies', 'Sandwiches', 'Coffee & Tea']"
+182,Mesa Grande Taqueria,,['Mexican']
+183,Schulte & Herr,$$,['German']
+184,Restaurante El Corazon,$$,"['Bars', 'Mexican']"
+185,The Rusty Lantern,$$,"['New American', 'Coffee & Tea', 'Gas Stations']"
+186,Foreside Tavern & Side Bar,$$,['New American']
+187,Artemisia Cafe,$$,"['Breakfast & Brunch', 'Cafes', 'Burgers']"
+188,Flores Restaurant,,"['Salvadoran', 'Bars']"
+189,Greeks of Peaks,,"['Greek', 'Food Trucks']"
+190,Phoever Maine Vietnamese Bar & Grill,$$,"['Vietnamese', 'Soup', 'Cocktail Bars']"
+191,Asmara,$$,"['African', 'Ethiopian', 'Eritrean']"
+192,Cowbell Rock Row,$$,"['Sports Bars', 'New American', 'Burgers']"
+193,O' Oysters,,"['Caterers', 'Seafood', 'Street Vendors']"
+194,Tostones Cafe,,['Latin American']
+195,George & Leon’s,$$,"['Sandwiches', 'Desserts', 'Wine Bars']"
+196,Cheese Louise - Portland,$$,"['Sandwiches', 'Bars', 'American']"
+197,Nosh Kitchen Bar,$$,"['Sandwiches', 'Burgers', 'Cocktail Bars']"
+198,Blazes Burgers,$,"['Burgers', 'American', 'Sandwiches']"
+199,Guerrero Maya Mexican Restaurant,$$,['Mexican']
+200,Forage Market,$$,"['Breakfast & Brunch', 'Bagels', 'Sandwiches']"
+201,Meow Cat Lounge,,"['Themed Cafes', 'Gift Shops']"
+202,Ramona's,$$,['Breakfast & Brunch']
+203,HiFi Donuts,$,"['Donuts', 'Coffee & Tea', 'Breakfast & Brunch']"
+204,Po' Boys & Pickles,$$,"['Sandwiches', 'Cajun/Creole', 'Seafood']"
+205,Tokyo Sushi Ramen & Bar,,"['Sushi Bars', 'Ramen']"
+206,Fuego,,['New Mexican Cuisine']
+207,Banh Appetit,,"['Vietnamese', 'Sandwiches']"
+208,Anania's Variety,$,"['Sandwiches', 'Pizza', 'Breakfast & Brunch']"
+209,Paper City BBQ,,"['Barbeque', 'Whiskey Bars']"
+210,Uncharted Tea,$,"['Cafes', 'Bubble Tea', 'Tea Rooms']"
+211,Sebago Brewing Company,$$,"['New American', 'Brewpubs', 'Burgers']"
+212,Elsmere BBQ & Wood Grill,$$,"['Barbeque', 'Seafood', 'Sandwiches']"
+213,Pizzaiolo,$,"['Pizza', 'Salad', 'Desserts']"
+214,Bayou Kitchen 2,,['Cajun/Creole']
+215,Rosie's,$$,"['Seafood', 'Burgers', 'Pubs']"
+216,Rebel Munchies & Libations,,"['Sandwiches', 'Salad', 'Cheesesteaks']"
+217,Golden Lotus Chinese Cuisine,$$,"['Cantonese', 'Dim Sum']"
+218,Free Street,,"['American', 'Cocktail Bars']"
+219,Bearded Lady's Jewel Box,$$,"['Cocktail Bars', 'Tapas/Small Plates']"
+220,Mr. Tuna,$$,"['Sushi Bars', 'Food Trucks', 'Japanese']"
+221,Coppersmith Tavern & Table,,"['Soup', 'Chicken Wings', 'Sports Bars']"
+222,Vientiane Market,$,['Thai']
+223,Dockside Grill,$$,"['New American', 'Seafood']"
+224,Shaking Crab Cajun Seafood,,"['Seafood', 'Cajun/Creole', 'Salad']"
+225,Diamond's Edge Restaurant & Marina,$$$,['Seafood']
+226,HI BOMBAY,,['Indian']
+227,Island Lobster Company,$$,"['Seafood', 'American']"
+228,Bake Maine Pottery Cafe,,"['Cafes', 'Breakfast & Brunch', 'Sandwiches']"
+229,Foodie friends grocery & restaurant,,"['Middle Eastern', 'Falafel', 'International Grocery']"
+230,Calabash,$$,"['New American', 'Cigar Bars', 'Beer Bar']"
+231,Riverton Station,,"['Pizza', 'Salad', 'Sandwiches']"
+232,Olive Cafe,$$,"['Mediterranean', 'Lebanese']"
+233,Congress Squared Restaurant,$$,"['New American', 'Seafood']"
+234,Babas,,"['Sandwiches', 'Cafes', 'Coffee & Tea']"
+235,Rathskeller On Wharf,,"['American', 'Beer Bar', 'Cocktail Bars']"
+236,Tally's Kitchen at Bayside,,"['Bakeries', 'Breakfast & Brunch', 'Sandwiches']"
+237,Coffee ME Up,$,"['Coffee & Tea', 'Breakfast & Brunch']"
+238,Ruski's Tavern,$,"['Pubs', 'Breakfast & Brunch', 'Dive Bars']"
+239,Taj Indian Cuisine,$$,"['Indian', 'Buffets', 'Halal']"

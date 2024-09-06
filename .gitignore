@@ -20,3 +20,12 @@ venv/
 # Ignore system files
 .DS_Store
 Thumbs.db
+
+# Ignore to do file
+to_do.txt
+
+# Ignore the tableau file
+restaurant_tableau_v1.twb
+
+# Ignore work books
+transformer_workbook.ipynb

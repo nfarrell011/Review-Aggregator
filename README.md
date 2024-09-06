@@ -17,7 +17,7 @@ This section provides a brief description of how the program works. Further deta
 
 This program works in stages:
 
-**Step 1: Extract Yelp Data**
+**Step 1: Extract Yelp Data:**
 * Execute the Yelp scraper (```/scarpers/yelp_scraper_driver.py```) setting the variable ```region``` to the desired location, i.e., city, state. 
 * This will extract all the restaurant and review data from that region.
 * The data extracted will be staged in two ```csv's```:
@@ -32,7 +32,7 @@ This program works in stages:
   * ```/data/raw/open_table_review_data_City_State_date.csv```
 * *There is a second OpenTable scraper ```/scrapers/opentable_scraper_region_driver.py``` that will scrape OpenTable by region. This was discovered to be unreliable. The OpenTable region search will not return a comprehensive list of **ALL** the restuarants that use OpenTable in that region.*
 
-**Step 3: Transform Data:**
+**Step 3: Transform Data:**  
 Naturally, there is a lack of uniformity among the raw data csv's generated from the scrapers. As a result, each raw data csv has it's on data cleaner/transformer. These scripts can be excuted in any order.
 
 Execute the following scripts:
@@ -47,7 +47,7 @@ These scripts will generate the following files:
 * ```/data/curated/yelp_restaurant_data_City_State_Date_CURATED.csv```
 * ```/data/curated/yelp_review_data_City_State_Date_CURATED.csv```
   
-**Step 4: Load Data Into Data Base:**
+**Step 4: Load Data Into Data Base:**  
 The final step is load the curated data into the final database. To do this, execute ```/db_manager/database_manager_driver.py```.
 
 <span style="color: red; font-weight: bold;">UNDER DEVELOPMENT</span>  

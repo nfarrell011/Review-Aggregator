@@ -15,13 +15,13 @@ There are transformer class files and transformer driver files. Each class is de
 
 All the transformer classes take an input raw csv located in the ```/data/raw/``` folder and output a curated csv to the ```/data/curated/``` folder.
 
-***Class Files***
+***Class Files***  
 ```data_transformers/transformer_classes/open_table_res_data_transformer.py```
 ```data_transformers/transformer_classes/open_table_review_data_transformer.py```
 ```data_transformers/transformer_classes/yelp_res_data_transformer.py```
 ```data_transformers/transformer_classes/yelp_review_data_transformer.py```  
 
-***Driver Files***
+***Driver Files***  
 ```data_transformers/transformer_classes/open_table_res_data_transformer_driver.py```
 ```data_transformers/transformer_classes/open_table_review_data_transformer_driver.py```
 ```data_transformers/transformer_classes/yelp_res_data_transformer_driver.py```

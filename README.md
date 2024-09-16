@@ -99,5 +99,7 @@ review_aggregator/
 │       └── yelp_scraper_driver.py
 │   └── READme.md
 └── READme.md
-
-```
+```  
+___  
+### Web Scrapers:
+Step one in the process is to deploy the webscrapers, described in the [Scraper README](scrapers/README.md)

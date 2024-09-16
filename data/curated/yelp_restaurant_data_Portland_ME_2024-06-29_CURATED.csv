@@ -1,0 +1,241 @@
+,restaurant_name,city,state,price_point,tags
+0,thistle and grouse,Portland,ME,,"['Gastropubs', 'Wine Bars', 'Cocktail Bars']"
+1,street and co.,Portland,ME,3.0,"['Seafood', 'New American', 'Mediterranean']"
+2,duckfat,Portland,ME,2.0,['New American']
+3,highroller lobster,Portland,ME,2.0,"['Seafood', 'American', 'Bars']"
+4,eventide oyster company,Portland,ME,2.0,['Seafood']
+5,central provisions,Portland,ME,3.0,"['Tapas/Small Plates', 'Cocktail Bars']"
+6,scales,Portland,ME,3.0,"['Seafood', 'New American', 'Beer, Wine & Spirits']"
+7,wayside tavern,Portland,ME,,['New American']
+8,bird and co,Portland,ME,2.0,['Tacos']
+9,luke's lobster portland pier,Portland,ME,2.0,"['Seafood', 'Soup', 'Sandwiches']"
+10,knotted apron,Portland,ME,,"['French', 'Italian', 'Cocktail Bars']"
+11,fore street,Portland,ME,3.0,"['New American', 'Seafood']"
+12,honey paw,Portland,ME,2.0,"['Asian Fusion', 'New American', 'Noodles']"
+13,twelve,Portland,ME,4.0,['New American']
+14,via vecchia,Portland,ME,2.0,"['Italian', 'Tapas/Small Plates', 'Cocktail Bars']"
+15,blyth and burrows,Portland,ME,2.0,"['Cocktail Bars', 'Tapas Bars']"
+16,salt yard cafe and bar,Portland,ME,,"['New American', 'Breakfast & Brunch', 'Cocktail Bars']"
+17,paper tiger,Portland,ME,,"['Tapas/Small Plates', 'Asian Fusion']"
+18,boda,Portland,ME,2.0,"['Thai', 'Tapas/Small Plates']"
+19,bread and friends,Portland,ME,,"['Bakeries', 'Coffee & Tea', 'New American']"
+20,independent ice,Portland,ME,2.0,"['Whiskey Bars', 'Cocktail Bars', 'Gastropubs']"
+21,evo kitchen + bar,Portland,ME,4.0,"['Tapas/Small Plates', 'Mediterranean', 'Bars']"
+22,maine oyster company,Portland,ME,,['Seafood']
+23,sur lie,Portland,ME,2.0,"['New American', 'Tapas Bars']"
+24,terlingua,Portland,ME,2.0,"['Barbeque', 'Latin American', 'Bars']"
+25,leeward,Portland,ME,,['Italian']
+26,izakaya minato,Portland,ME,3.0,['Izakaya']
+27,solo italiano,Portland,ME,3.0,"['Italian', 'Bars']"
+28,crispy gai,Portland,ME,2.0,"['Chicken Wings', 'Sandwiches', 'Bars']"
+29,quanto basta,Portland,ME,,"['Italian', 'Pizza', 'Food Trucks']"
+30,empire chinese kitchen,Portland,ME,2.0,"['Dim Sum', 'Cantonese']"
+31,union restaurant,Portland,ME,2.0,"['Cocktail Bars', 'New American', 'Breakfast & Brunch']"
+32,isa bistro,Portland,ME,2.0,"['New American', 'New Mexican Cuisine']"
+33,papi,Portland,ME,2.0,"['Cocktail Bars', 'Puerto Rican']"
+34,chaval,Portland,ME,3.0,"['Spanish', 'French', 'Cocktail Bars']"
+35,north point,Portland,ME,2.0,"['Lounges', 'American']"
+36,butcher burger,Portland,ME,,"['Burgers', 'Sandwiches', 'Tacos']"
+37,n to tail,Portland,ME,3.0,"['Korean', 'Barbeque', 'Tapas/Small Plates']"
+38,dimillo's on the water,Portland,ME,3.0,"['Seafood', 'Italian', 'New American']"
+39,bramhall,Portland,ME,2.0,"['Bars', 'American']"
+40,smoked portland,Portland,ME,,"['Chicken Shop', 'Beer Bar', 'Cocktail Bars']"
+41,great lost bear,Portland,ME,2.0,"['American', 'Beer Bar', 'Desserts']"
+42,hot suppa,Portland,ME,2.0,"['Breakfast & Brunch', 'American', 'Comfort Food']"
+43,miyake,Portland,ME,3.0,"['Japanese', 'Sushi Bars']"
+44,jing yan,Portland,ME,,['Chinese']
+45,keg and kraken,Portland,ME,2.0,"['Sushi Bars', 'Thai', 'Bars']"
+46,quiero cafe,Portland,ME,,"['Latin American', 'Empanadas']"
+47,mash tun,Portland,ME,2.0,"['Burgers', 'Breweries']"
+48,thirsty pig,Portland,ME,2.0,"['Beer, Wine & Spirits', 'American', 'Bars']"
+49,ribollita,Portland,ME,2.0,"['Italian', 'Seafood']"
+50,continental,Portland,ME,,"['British', 'Beer Bar', 'Cocktail Bars']"
+51,flatbread company,Portland,ME,2.0,"['Pizza', 'Salad', 'Beer Bar']"
+52,wilson county barbecue,Portland,ME,2.0,['Barbeque']
+53,armory lounge,Portland,ME,2.0,"['Lounges', 'New American']"
+54,lazzari,Portland,ME,2.0,"['Bars', 'Pizza', 'Italian']"
+55,green elephant,Portland,ME,2.0,"['Vegetarian', 'Vegan', 'Asian Fusion']"
+56,rigby yard,Portland,ME,2.0,"['Beer, Wine & Spirits', 'American', 'Coffee & Tea']"
+57,tipo,Portland,ME,2.0,"['Italian', 'Pizza', 'Cocktail Bars']"
+58,kume,Portland,ME,,"['Japanese', 'Sushi Bars', 'Steakhouses']"
+59,king's head,Portland,ME,2.0,"['American', 'Pubs']"
+60,black cow,Portland,ME,2.0,"['Burgers', 'Cocktail Bars', 'American']"
+61,woodford f and b,Portland,ME,3.0,"['New American', 'Bars', 'Seafood']"
+62,bite into maine,Portland,ME,3.0,"['Seafood', 'Food Trucks']"
+63,sichuan kitchen,Portland,ME,2.0,['Szechuan']
+64,cantina calafia,Portland,ME,,['Tacos']
+65,novel,Portland,ME,,"['Cafes', 'Bookstores', 'Cocktail Bars']"
+66,dok mali thai kitchen,Portland,ME,,"['Thai', 'Salad', 'Chicken Wings']"
+67,east ender,Portland,ME,2.0,"['Burgers', 'Seafood', 'Karaoke']"
+68,bar futo,Portland,ME,,"['Bars', 'Japanese']"
+69,mainely noods,Portland,ME,2.0,['Noodles']
+70,mi sen noodle bar,Portland,ME,2.0,"['Thai', 'Asian Fusion', 'Noodles']"
+71,bite into maine,Portland,ME,2.0,"['Seafood', 'Sandwiches']"
+72,room for improvement,Portland,ME,,"['Cocktail Bars', 'Hot Dogs', 'Beer Bar']"
+73,becky's diner,Portland,ME,2.0,"['American', 'Breakfast & Brunch']"
+74,sopo seafood market and raw bar,Portland,ME,2.0,"['Seafood', 'Live/Raw Food', 'Seafood Markets']"
+75,công tử bột,Portland,ME,2.0,['Vietnamese']
+76,regards,Portland,ME,,"['Cocktail Bars', 'New American', 'Seafood']"
+77,mami portland,Portland,ME,2.0,"['Japanese', 'Food Trucks']"
+78,gilbert's chowder house,Portland,ME,2.0,['Seafood']
+79,kuno,Portland,ME,,"['Food Trucks', 'Thai', 'Sandwiches']"
+80,old port sea grill and raw bar,Portland,ME,2.0,"['Seafood', 'Bars']"
+81,paella seafood,Portland,ME,,['Seafood']
+82,lenora,Portland,ME,,"['Mexican', 'Breakfast & Brunch', 'Cocktail Bars']"
+83,eighteen95,Portland,ME,,['Breakfast & Brunch']
+84,taco escobarr,Portland,ME,2.0,['Tacos']
+85,salvage bbq,Portland,ME,2.0,['Barbeque']
+86,bayside american cafe,Portland,ME,2.0,"['Breakfast & Brunch', 'Sandwiches', 'Wraps']"
+87,il leone,Portland,ME,,['Pizza']
+88,portland hunt and alpine club,Portland,ME,2.0,"['Cocktail Bars', 'Gastropubs']"
+89,pai men miyake,Portland,ME,2.0,"['Sushi Bars', 'Ramen']"
+90,flores restaurant,Portland,ME,1.0,['Salvadoran']
+91,grill room,Portland,ME,3.0,"['Steakhouses', 'New American', 'Bars']"
+92,brickyard hollow brewing company,Portland,ME,2.0,"['Pizza', 'Brewpubs']"
+93,little tap house,Portland,ME,2.0,"['Gastropubs', 'New American']"
+94,city farmhouse kitchen and bar,Portland,ME,2.0,['American']
+95,maiz colombian street food - forest ave,Portland,ME,2.0,['Colombian']
+96,friendly toast - portland,Portland,ME,2.0,"['Breakfast & Brunch', 'Diners', 'Acai Bowls']"
+97,well at jordan's farm,Portland,ME,3.0,['New American']
+98,david's opus ten,Portland,ME,4.0,['New American']
+99,nom cafe,Portland,ME,,"['Modern European', 'Breakfast & Brunch']"
+100,thai tree,Portland,ME,,"['Thai', 'Desserts', 'Coffee & Tea']"
+101,harbor bistro + terrace,Portland,ME,,"['Seafood', 'Breakfast & Brunch', 'Cocktail Bars']"
+102,jp's bistro,Portland,ME,,"['French', 'Seafood']"
+103,front room,Portland,ME,2.0,"['American', 'Breakfast & Brunch']"
+104,north43bistro,Portland,ME,2.0,['New American']
+105,jefe juan's,Portland,ME,,['Mexican']
+106,volcano restaurant bar and grill,Portland,ME,,"['Bars', 'American']"
+107,inkwell,Portland,ME,3.0,"['Tapas/Small Plates', 'Cocktail Bars']"
+108,mazzat restaurant,Portland,ME,,['Mediterranean']
+109,roma cafe,Portland,ME,3.0,['Italian']
+110,waypoint restaurant,Portland,ME,,"['American', 'Bars', 'Seafood']"
+111,tres leches cakes flor,Portland,ME,,"['Bakeries', 'Mexican']"
+112,little pig,Portland,ME,,['Thai']
+113,tomaso's canteen,Portland,ME,2.0,"['Bars', 'American']"
+114,david's restaurant,Portland,ME,3.0,"['New American', 'Seafood']"
+115,tuscan table,Portland,ME,2.0,['Italian']
+116,porthole restaurant and pub,Portland,ME,2.0,"['Diners', 'Seafood', 'Breakfast & Brunch']"
+117,casita corazon,Portland,ME,,['Mexican']
+118,mitr ping yang thai kitchen,Portland,ME,,['Thai']
+119,smalls,Portland,ME,,['Cafes']
+120,low key,Portland,ME,,"['Bars', 'Seafood', 'Sandwiches']"
+121,ugly duckling,Portland,ME,,"['Bakeries', 'Breakfast & Brunch']"
+122,taco trio,Portland,ME,1.0,['Mexican']
+123,nosh taco,Portland,ME,,['Tacos']
+124,sinful kitchen,Portland,ME,2.0,"['Breakfast & Brunch', 'Coffee & Tea', 'Gluten-Free']"
+125,corner room,Portland,ME,2.0,"['Italian', 'Pizza', 'Bars']"
+126,david's 388 - south portland,Portland,ME,2.0,"['New American', 'Bars', 'Desserts']"
+127,angoor wine bar,Portland,ME,,"['Wine Bars', 'Venues & Event Spaces', 'Tapas Bars']"
+128,coals bayside,Portland,ME,2.0,['Pizza']
+129,tacos del seoul,Portland,ME,1.0,"['Food Trucks', 'Korean', 'Mexican']"
+130,benkay japanese restaurant and sushi bar,Portland,ME,2.0,"['Japanese', 'Sushi Bars']"
+131,henry's public house,Portland,ME,,"['Cocktail Bars', 'Wine Bars', 'American']"
+132,oun lido’s,Portland,ME,,"['Cambodian', 'Salad', 'Coffee & Tea']"
+133,old port noodle house,Portland,ME,2.0,"['Vietnamese', 'Thai', 'Noodles']"
+134,clam bar,Portland,ME,,['Seafood']
+135,frog and turtle,Portland,ME,2.0,"['French', 'Breakfast & Brunch', 'Gastropubs']"
+136,saeng thai house,Portland,ME,2.0,"['Thai', 'Asian Fusion']"
+137,crunchy poké,Portland,ME,2.0,"['Sushi Bars', 'Ramen', 'Poke']"
+138,de vons,Portland,ME,,['French']
+139,low stakes lodge,Portland,ME,,"['American', 'Steakhouses']"
+140,portland lobster co,Portland,ME,2.0,['Seafood']
+141,genji ramen,Portland,ME,,"['Mexican', 'Ramen', 'Sushi Bars']"
+142,kozeta's restaurant,Portland,ME,1.0,"['Pizza', 'Greek', 'Breakfast & Brunch']"
+143,saltwater grille,Portland,ME,3.0,"['American', 'Seafood', 'Cocktail Bars']"
+144,red sea restaurant,Portland,ME,2.0,['African']
+145,dutch's,Portland,ME,2.0,"['Breakfast & Brunch', 'Sandwiches']"
+146,slab sicilian street food,Portland,ME,2.0,"['Bars', 'Pizza', 'Italian']"
+147,bistro leluco,Portland,ME,,"['Bars', 'Seafood', 'Mediterranean']"
+148,anoche,Portland,ME,,"['Basque', 'Cocktail Bars']"
+149,j's oyster,Portland,ME,2.0,['Seafood']
+150,noble barbecue,Portland,ME,2.0,"['Barbeque', 'Sandwiches']"
+151,other side diner,Portland,ME,2.0,"['Diners', 'Breakfast & Brunch', 'Greek']"
+152,port 65 kitchen and bar,Portland,ME,,"['Diners', 'Breakfast & Brunch', 'Bars']"
+153,ocotillo,Portland,ME,,"['Breakfast & Brunch', 'Venues & Event Spaces', 'Cocktail Bars']"
+154,local 188,Portland,ME,2.0,"['Spanish', 'Bars', 'Mediterranean']"
+155,camp pennant,Portland,ME,,"['Brewpubs', 'Distilleries', 'Pizza']"
+156,sun vietnamese restaurant,Portland,ME,1.0,"['Vietnamese', 'Salad', 'Chicken Wings']"
+157,lb kitchen,Portland,ME,2.0,"['Cafes', 'Juice Bars & Smoothies', 'Breakfast & Brunch']"
+158,pattaya kitchen,Portland,ME,,"['Asian Fusion', 'Thai', 'Noodles']"
+159,andy's old port pub,Portland,ME,2.0,"['Pubs', 'New American', 'Music Venues']"
+160,sal de la tierra,Portland,ME,,"['Latin American', 'Mexican']"
+161,magissa,Portland,ME,,['Greek']
+162,dina’s cuisine,Portland,ME,,"['Mediterranean', 'Middle Eastern', 'Bakeries']"
+163,cafe louis,Portland,ME,,"['Caribbean', 'Breakfast & Brunch']"
+164,local press,Portland,ME,1.0,"['Soup', 'Sandwiches']"
+165,docks seafood,Portland,ME,2.0,"['Seafood', 'Seafood Markets']"
+166,nura hummus and falafel,Portland,ME,,"['Middle Eastern', 'Salad', 'Sandwiches']"
+167,yosaku,Portland,ME,2.0,"['Japanese', 'Sushi Bars']"
+168,marcy's diner,Portland,ME,2.0,"['Diners', 'American', 'Breakfast & Brunch']"
+169,porttown public house and coffee bar,Portland,ME,,"['Bars', 'Pizza', 'Coffee & Tea']"
+170,alto terrace bar + kitchen,Portland,ME,,"['Beer, Wine & Spirits', 'Breakfast & Brunch', 'Cocktail Bars']"
+171,toku truck,Portland,ME,,"['Food Trucks', 'Juice Bars & Smoothies', 'Sandwiches']"
+172,cbg bar and grill,Portland,ME,,"['American', 'Bars']"
+173,sicilian table,Portland,ME,3.0,"['Mediterranean', 'Italian']"
+174,,Portland,ME,,
+175,otto,Portland,ME,2.0,"['Pizza', 'Gluten-Free', 'Vegetarian']"
+176,benreuben’s knishery,Portland,ME,,['Delis']
+177,nonesuch river brewing,Portland,ME,2.0,"['Breweries', 'Pubs', 'New American']"
+178,brookside food and drink,Portland,ME,,"['Salad', 'Mexican', 'Sandwiches']"
+179,bar publica,Portland,ME,,"['Latin American', 'Bars']"
+180,rio bravo tacos and tequila,Portland,ME,2.0,['Mexican']
+181,knitting nook,Portland,ME,,"['Knitting Supplies', 'Sandwiches', 'Coffee & Tea']"
+182,mesa grande taqueria,Portland,ME,,['Mexican']
+183,schulte and herr,Portland,ME,2.0,['German']
+184,restaurante el corazon,Portland,ME,2.0,"['Bars', 'Mexican']"
+185,rusty lantern,Portland,ME,2.0,"['New American', 'Coffee & Tea', 'Gas Stations']"
+186,foreside tavern and side bar,Portland,ME,2.0,['New American']
+187,artemisia cafe,Portland,ME,2.0,"['Breakfast & Brunch', 'Cafes', 'Burgers']"
+188,flores restaurant,Portland,ME,,"['Salvadoran', 'Bars']"
+189,greeks of peaks,Portland,ME,,"['Greek', 'Food Trucks']"
+190,phoever maine vietnamese bar and grill,Portland,ME,2.0,"['Vietnamese', 'Soup', 'Cocktail Bars']"
+191,asmara,Portland,ME,2.0,"['African', 'Ethiopian', 'Eritrean']"
+192,cowbell rock row,Portland,ME,2.0,"['Sports Bars', 'New American', 'Burgers']"
+193,o' oysters,Portland,ME,,"['Caterers', 'Seafood', 'Street Vendors']"
+194,tostones cafe,Portland,ME,,['Latin American']
+195,george and leon’s,Portland,ME,2.0,"['Sandwiches', 'Desserts', 'Wine Bars']"
+196,cheese louise - portland,Portland,ME,2.0,"['Sandwiches', 'Bars', 'American']"
+197,nosh kitchen bar,Portland,ME,2.0,"['Sandwiches', 'Burgers', 'Cocktail Bars']"
+198,blazes burgers,Portland,ME,1.0,"['Burgers', 'American', 'Sandwiches']"
+199,guerrero maya mexican restaurant,Portland,ME,2.0,['Mexican']
+200,forage market,Portland,ME,2.0,"['Breakfast & Brunch', 'Bagels', 'Sandwiches']"
+201,meow cat lounge,Portland,ME,,"['Themed Cafes', 'Gift Shops']"
+202,ramona's,Portland,ME,2.0,['Breakfast & Brunch']
+203,hifi donuts,Portland,ME,1.0,"['Donuts', 'Coffee & Tea', 'Breakfast & Brunch']"
+204,po' boys and pickles,Portland,ME,2.0,"['Sandwiches', 'Cajun/Creole', 'Seafood']"
+205,tokyo sushi ramen and bar,Portland,ME,,"['Sushi Bars', 'Ramen']"
+206,fuego,Portland,ME,,['New Mexican Cuisine']
+207,banh appetit,Portland,ME,,"['Vietnamese', 'Sandwiches']"
+208,anania's variety,Portland,ME,1.0,"['Sandwiches', 'Pizza', 'Breakfast & Brunch']"
+209,paper city bbq,Portland,ME,,"['Barbeque', 'Whiskey Bars']"
+210,uncharted tea,Portland,ME,1.0,"['Cafes', 'Bubble Tea', 'Tea Rooms']"
+211,sebago brewing company,Portland,ME,2.0,"['New American', 'Brewpubs', 'Burgers']"
+212,elsmere bbq and wood grill,Portland,ME,2.0,"['Barbeque', 'Seafood', 'Sandwiches']"
+213,pizzaiolo,Portland,ME,1.0,"['Pizza', 'Salad', 'Desserts']"
+214,bayou kitchen 2,Portland,ME,,['Cajun/Creole']
+215,rosie's,Portland,ME,2.0,"['Seafood', 'Burgers', 'Pubs']"
+216,rebel munchies and libations,Portland,ME,,"['Sandwiches', 'Salad', 'Cheesesteaks']"
+217,golden lotus chinese cuisine,Portland,ME,2.0,"['Cantonese', 'Dim Sum']"
+218,free street,Portland,ME,,"['American', 'Cocktail Bars']"
+219,bearded lady's jewel box,Portland,ME,2.0,"['Cocktail Bars', 'Tapas/Small Plates']"
+220,mr. tuna,Portland,ME,2.0,"['Sushi Bars', 'Food Trucks', 'Japanese']"
+221,coppersmith tavern and table,Portland,ME,,"['Soup', 'Chicken Wings', 'Sports Bars']"
+222,vientiane market,Portland,ME,1.0,['Thai']
+223,dockside grill,Portland,ME,2.0,"['New American', 'Seafood']"
+224,shaking crab cajun seafood,Portland,ME,,"['Seafood', 'Cajun/Creole', 'Salad']"
+225,diamond's edge restaurant and marina,Portland,ME,3.0,['Seafood']
+226,hi bombay,Portland,ME,,['Indian']
+227,island lobster company,Portland,ME,2.0,"['Seafood', 'American']"
+228,bake maine pottery cafe,Portland,ME,,"['Cafes', 'Breakfast & Brunch', 'Sandwiches']"
+229,foodie friends grocery and restaurant,Portland,ME,,"['Middle Eastern', 'Falafel', 'International Grocery']"
+230,calabash,Portland,ME,2.0,"['New American', 'Cigar Bars', 'Beer Bar']"
+231,riverton station,Portland,ME,,"['Pizza', 'Salad', 'Sandwiches']"
+232,olive cafe,Portland,ME,2.0,"['Mediterranean', 'Lebanese']"
+233,congress squared restaurant,Portland,ME,2.0,"['New American', 'Seafood']"
+234,babas,Portland,ME,,"['Sandwiches', 'Cafes', 'Coffee & Tea']"
+235,rathskeller on wharf,Portland,ME,,"['American', 'Beer Bar', 'Cocktail Bars']"
+236,tally's kitchen at bayside,Portland,ME,,"['Bakeries', 'Breakfast & Brunch', 'Sandwiches']"
+237,coffee me up,Portland,ME,1.0,"['Coffee & Tea', 'Breakfast & Brunch']"
+238,ruski's tavern,Portland,ME,1.0,"['Pubs', 'Breakfast & Brunch', 'Dive Bars']"
+239,taj indian cuisine,Portland,ME,2.0,"['Indian', 'Buffets', 'Halal']"

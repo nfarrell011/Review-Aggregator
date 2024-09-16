@@ -10,6 +10,7 @@ data from the OpenTable website to a form that is ready to be loaded in the rest
 """
 ###################################################################################################################
 # libraries
+###################################################################################################################
 import pandas as pd  
 import numpy as np  
 from datetime import date, datetime, timedelta 
@@ -19,6 +20,7 @@ import datetime
 
 ###################################################################################################################
 # class
+###################################################################################################################
 class OpenTableReviewDataTransformer:
     """
     Class for transforming raw extracted OpenTable review data to curated data ready to be entered into the 
@@ -126,6 +128,14 @@ class OpenTableReviewDataTransformer:
             self.raw_data = self.raw_data[self.raw_data["restaurant_name_input"] != res]
         return None
     
+    def clean_hometown_column(self) -> None:
+        """
+        Removes "Greater" from the hometown column
+        """
+        self.raw_data["city"] = self.raw_data["city"].str.replace("Greater", '')
+        self.raw_data["city"] = self.raw_data["city"].str.strip()
+        return self
+    
     def get_date_from_file_name(self) -> datetime.datetime:
         """
         Extracted the date from the file name. This can be used to convert some of the "datelike"
@@ -202,6 +212,7 @@ class OpenTableReviewDataTransformer:
         """
         self.raw_data.rename(columns = {"restaurant_name_extracted": "reviewer_name",
                                         "restaurant_name_input": "restaurant_name",
+                                        "hometown":"city",
                                         "Overall": "overall",
                                         "Food": "food",
                                         "Service": "service",
@@ -220,9 +231,12 @@ class OpenTableReviewDataTransformer:
         - None
         """
         self.raw_data.drop(["res_name", "Unnamed: 0"], axis = 1, inplace = True)
-        column_order = ["restaurant_name", "datelike", "reviewer_name", "hometown", "overall", "food", "service", "ambience", "review_text", "origins"]
+        column_order = ["restaurant_name", "datelike", "reviewer_name", "city", "overall", "food", "service", "ambience", "review_text", "origins"]
         self.raw_data = self.raw_data[column_order]
         return None
+        
+#################################################################################################################################
+# End
 #################################################################################################################################
 if __name__ == "__main__":
     pass

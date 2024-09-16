@@ -22,10 +22,11 @@ venv/
 Thumbs.db
 
 # Ignore to do file
-to_do.txt
+issues.txt
 
 # Ignore the tableau file
 restaurant_tableau_v1.twb
+.~restaurant_tableau_v1__10352.twbr
 
 # Ignore work books
 transformer_workbook.ipynb

@@ -7,10 +7,6 @@ Yelp Restaurant Data Transformer Class
 
 This file contains YelpResDataTransformer class. This class is used to transform the raw extracted restuarant 
 data from the Yelp website to a form that is ready to be loaded in the restaurant_review_database.
-
-
-### Region has been added to the scraper. This will have to be updated to include a method for parsing the region ###
-
 """
 #################################################################################################################################
 # libraries
@@ -106,6 +102,7 @@ class YelpResDataTransformer:
     def clean_price_point_col(self) -> None:
         """
         Convert extractions that do not contain "$" to None.
+        Conert symbols to numeric values.
 
         Parameters:
         - None
@@ -115,6 +112,12 @@ class YelpResDataTransformer:
         """
         try:
             self.raw_data["price_point"] = self.raw_data["price_point"].apply(lambda x: None if (pd.isna(x)) or ("$" not in x) else x)
+            mapper = {None:None,
+                      "$":1,
+                      "$$":2,
+                      "$$$":3,
+                      "$$$$":4}
+            self.raw_data["price_point"] = self.raw_data["price_point"].map(mapper)
         except Exception as e:
             print(f"Error cleaning price_point column: {e}")
 
@@ -142,6 +145,18 @@ class YelpResDataTransformer:
             print(f"Error updating tag column: {e}")
 
         return self
+    
+    def add_city_and_state_columns(self) -> None:
+        """
+        Adds a city and state column by extracting the information from the column name. OpenTableScrapper generates
+        "region" column and then transforms that column. One of these methods will be modified so that they match.
+        """
+        parts = self.file_name.split("_")
+        city = parts[3]
+        state = parts[4]
+        self.raw_data["city"] = city
+        self.raw_data["state"] = state
+        return self
 
     def drop_rename_reorder_cols(self) -> None:
         """
@@ -158,11 +173,24 @@ class YelpResDataTransformer:
             self.raw_data.rename(columns = {"name": "restaurant_name"}, inplace = True)
             self.raw_data.drop(["Unnamed: 0"], axis = 1, inplace = True)
 
-            column_order = ["restaurant_name", "price_point", "tags"]
+            column_order = ["restaurant_name", "city", "state", "price_point", "tags"]
             self.raw_data = self.raw_data[column_order]
         except Exception as e:
             print(f"Error dropping, renaming, and reordering columns: {e}")
 
+        return self
+    
+    def save_transformed_data(self) -> None:
+        """
+        Saves transformed data to: data/curated/ folder
+        """
+        try:
+            file_name = self.file_name.replace(".csv", "")
+            SAVE_PATH = str(self.HOME / "data" / "curated" / f"{file_name}_CURATED.csv")
+            self.raw_data.to_csv(SAVE_PATH)
+        except Exception as e:
+            print(f"Error saving data to csv: {e}")
+        
         return self
     
     def execute(self, file_name:str) -> None:
@@ -182,22 +210,17 @@ class YelpResDataTransformer:
             .clean_restaurant_name_column()
             .clean_price_point_col()
             .update_tag_col()
+            .add_city_and_state_columns()
             .drop_rename_reorder_cols()
+            .save_transformed_data()
             )
         except Exception as e:
             print(f"Error executing transformation: {e}")
             
         return None
-
+    
 #################################################################################################################################
 # End
 #################################################################################################################################
-
-file_name = "yelp_restaurant_data_Portland_ME_2024-06-29.csv"
-
-data_transformer = YelpResDataTransformer()
-data_transformer.execute(file_name)
-print(data_transformer.raw_data)
-
 if __name__ == "__main__":
     pass

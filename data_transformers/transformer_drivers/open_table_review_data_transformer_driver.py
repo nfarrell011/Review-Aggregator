@@ -36,6 +36,7 @@ def main():
     data_transformer.remove_erroneous_restaurant_reviews(restaurants_to_remove)
     data_transformer.update_datelike_column()
     data_transformer.rename_columns()
+    data_transformer.clean_hometown_column()
     data_transformer.drop_and_reorder_cols()
     
     # save curated df as cvs

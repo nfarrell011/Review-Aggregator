@@ -28,12 +28,6 @@ class YelpReviewDataTransformer:
     def __init__(self) -> None:
         """
         Initializes the data transformer object.
-
-        Parameters:
-        - None
-
-        Returns:
-        - None
         """
         self.HOME = Path.cwd()
         self.raw_data = None
@@ -45,9 +39,6 @@ class YelpReviewDataTransformer:
 
         Parameters:
         - file_name: (str) - The file name of the Yelp raw data.
-
-        Returns:
-        - None
         """
         self.file_name = file_name
         return self
@@ -55,12 +46,6 @@ class YelpReviewDataTransformer:
     def set_data(self) -> None:
         """
         Retrieves the raw data from the csv file.
-
-        Parameters:
-        - None
-
-        Returns:
-        - None
         """
         try:
             PATH_TO_DATA_FOLDER = self.HOME / "data" / "raw"
@@ -80,9 +65,6 @@ class YelpReviewDataTransformer:
 
         Parameters:
         - columns: (list) - A list containing the two column names.
-        
-        Returns:
-        - None
         """
         try:
             # string replacements
@@ -92,7 +74,7 @@ class YelpReviewDataTransformer:
             # removes "the" from restaurant names
             self.raw_data["restaurant"] = self.raw_data["restaurant"].str.replace(r'^\s*the\s+', '', case = False, regex = True)
 
-            # make all letteres lowercase
+            # make all leteres lowercase
             self.raw_data["restaurant"] = self.raw_data["restaurant"].str.lower()
 
         except Exception as e:
@@ -103,12 +85,6 @@ class YelpReviewDataTransformer:
     def clean_datelike_col(self) -> None:
         """
         Converts "datelike" column elemnts to datetime.datetime object
-
-        Parameters:
-        - None
-
-        Returns:
-        - None
         """
         try:
             self.raw_data["datelike"] = self.raw_data["datelike"].apply(lambda x: datetime.datetime.strptime(x, "%b %d, %Y"))
@@ -119,7 +95,13 @@ class YelpReviewDataTransformer:
     
     def get_rating_integer_from_text(self, text:str):
         """
-        Extracts an integer from a string
+        Extracts an integer from a string.
+
+        Parameters:
+        - text: (str) - The text from the dataframe row.
+
+        Returns:
+        - rating: (int) - The int rating that was extracted.
         """
         regex = r'(\d+)'
 
@@ -131,12 +113,6 @@ class YelpReviewDataTransformer:
     def clean_rating_column(self) -> None:
         """
         Extracts the integer portion of the text in the rating column
-
-        Parameters:
-        - None
-        
-        Returns:
-        - None
         """
         try:
             self.raw_data["rating"] = self.raw_data["rating"].apply(lambda x: self.get_rating_integer_from_text(x))
@@ -144,39 +120,90 @@ class YelpReviewDataTransformer:
             print(f"Error updating tag column: {e}")
 
         return self
+    
+    def split_hometown(self, x) -> None:
+        """
+        Splits the hometown column using the number of commas as a guide. Some the state will end being countries; this
+        will dealt with subsequently.
+        """
+        # Get the number of commas in the hometown string
+        comma_count = str(x).count(",")
+
+        # Edge case, Washington, DC is dealt with seperately
+        if str(x) == "Washington, DC":
+            temp = str(x).replace(",", "")
+            return temp, pd.NA
+        
+        # Here the comma count is used to dictate how the string is processed.
+        elif comma_count == 0:
+            return x, pd.NA
+        elif comma_count == 1:
+            result = x.split(",", 1)
+            return result[0].strip(), result[1].strip() if len(result) > 1 else pd.NA
+        elif comma_count == 2:
+            temp = x.split(",", 2)
+            result = temp[1].strip(), temp[2].strip()
+        elif comma_count >= 3:
+            temp = x.split(",", 2)
+            result = temp[1].strip(), temp[2].strip()
+        else:
+            result = x.split(",")
+            result = result[0].strip(), result[1].strip() if len(result) > 1 else pd.NA
+        return result
+    
+    def seperate_city_state(self) -> None:
+        """  
+        Seperates the hometown column into city and state columns.
+        """
+        self.raw_data[["city", "state"]] = self.raw_data["hometown"].apply(lambda x: self.split_hometown(x)).apply(pd.Series)
+        return self
+    
+    def check_if_state_is_state(self, x) -> None:
+        """  
+        Checks if what in the state column is actually as US state.
+        """
+        state_abbreviations = [
+                                'AL', 'AK', 'AZ', 'AR', 'CA', 'CO', 'CT', 'DE', 'FL', 'GA',
+                                'HI', 'ID', 'IL', 'IN', 'IA', 'KS', 'KY', 'LA', 'ME', 'MD',
+                                'MA', 'MI', 'MN', 'MS', 'MO', 'MT', 'NE', 'NV', 'NH', 'NJ',
+                                'NM', 'NY', 'NC', 'ND', 'OH', 'OK', 'OR', 'PA', 'RI', 'SC',
+                                'SD', 'TN', 'TX', 'UT', 'VT', 'VA', 'WA', 'WV', 'WI', 'WY'
+                            ]
+        if pd.isna(x):
+            return pd.NA
+        elif x not in state_abbreviations:
+            return x
+        else:
+            return "US"
+        
+    def create_country_column(self) -> None:
+        """  
+        Generates a country column by checking if what in the state column is actually as US state. 
+        """
+        self.raw_data["country"] = self.raw_data["state"].apply(lambda x: self.check_if_state_is_state(x))
+        self.raw_data.loc[self.raw_data["country"] != "US", "state"] = pd.NA
+        return self
 
     def drop_rename_reorder_cols(self) -> None:
         """
         Drops columns: "Unnamed: 0", renames "restaurant" and "text" and reorders the columns to facilitate 
         database loading.
-
-        Parameters:
-        - None
-
-        Returns:
-        - None
         """
         try:
             self.raw_data.rename(columns = {"restaurant": "restaurant_name",
                                             "text": "review_text"}, inplace = True)
-            self.raw_data.drop(["Unnamed: 0"], axis = 1, inplace = True)
+            self.raw_data.drop(["Unnamed: 0", "hometown"], axis = 1, inplace = True)
 
-            column_order = ["restaurant_name", "datelike", "reviewer_name", "hometown", "rating", "review_text", "origins"]
+            column_order = ["restaurant_name", "datelike", "reviewer_name", "city", "state", "country", "rating", "review_text", "origins"]
             self.raw_data = self.raw_data[column_order]
         except Exception as e:
             print(f"Error dropping, renaming, and reordering columns: {e}")
 
         return self
     
-    def save_transformed_data(self):
+    def save_transformed_data(self) -> None:
         """
         Saves transformed data to: data/curated/ folder
-
-        Parameters:
-        - None
-
-        Returns:
-        - None
         """
         try:
             SAVE_PATH = str(self.HOME / "data" / "curated" / f"{self.file_name}_CURATED.csv")
@@ -203,6 +230,8 @@ class YelpReviewDataTransformer:
             .clean_restaurant_name_column()
             .clean_datelike_col()
             .clean_rating_column()
+            .seperate_city_state()
+            .create_country_column()
             .drop_rename_reorder_cols()
             .save_transformed_data()
             )
@@ -214,12 +243,5 @@ class YelpReviewDataTransformer:
 #################################################################################################################################
 # End
 #################################################################################################################################
-
-file_name = "yelp_review_data_Portland_ME_2024-06-29.csv"
-
-data_transformer = YelpReviewDataTransformer()
-data_transformer.execute(file_name)
-print(data_transformer.raw_data)
-
-#if __name__ == "__main__":
-#    pass
+if __name__ == "__main__":
+   pass

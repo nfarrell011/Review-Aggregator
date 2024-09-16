@@ -11,8 +11,8 @@ ___
 ### Methodology:
 This section provides a brief description of how the program works. Further details on each step are provided in the section ```README.md``` files.
 * [Scraper README](scrapers/README.md)
-* [Transformer README](scrapers/README.md)
-* [Database README](scrapers/README.md)
+* [Transformer README](data_transformers/README.md)
+* [Database README](db_manager/README.md)
 
 
 This program works in stages:

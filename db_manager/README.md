@@ -35,7 +35,7 @@ Data insertion requires $5$ arguments:
 2. The curated Yelp review data file name.
 3. The curated OpenTable review data file name.
 4. The curated Yelp rerestuarant data file name.
-5. The curated OpenTable data file name.
+5. The curated OpenTable restaurant data file name.
 
 **Example Usage:**
 
@@ -67,7 +67,7 @@ ResDB.load_aux_rating_table()
 ```
 
 ***Step 3: Query***  
-Once the data is inserted, the user can perform queries using the ```query``` method.  
+Once the data is inserted, queries can be performed using the ```query``` method.  
 ```python
 # Define the query
 query = """ 

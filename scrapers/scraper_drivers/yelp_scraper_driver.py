@@ -21,7 +21,7 @@ def main():
     """
     HOME = Path.cwd()
     URL = "https://www.yelp.com"
-    region = "Portland, ME"
+    region = "Portland, ME" # Update me! 
     business_type = "Restaurants"
     scraper = YelpScraper(URL, region, business_type)
     scraper.go_to_region()

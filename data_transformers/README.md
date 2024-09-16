@@ -29,4 +29,4 @@ All the transformer classes take an input raw csv located in the ```/data/raw/``
 
 ___
 ### Database Insertion  
-Once the data has been curated it is ready to loaded into the database. This performed by the database manager described in the [Database README](db_manager/README.md)
+Once the data has been curated it is ready to loaded into the database. This performed by the database manager described in the [Database README](/db_manager/README.md)

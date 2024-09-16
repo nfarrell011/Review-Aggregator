@@ -81,6 +81,23 @@ review_aggregator/
 │       ├── open_table_review_data_transformer_driver.py
 │       ├── yelp_table_res_data_transformer_driver.py
 │       └── yelp_table_res_data_transformer_driver.py
-
+│   ├── READme.md
+├── db_manager/
+│   ├── data_base_driver.ipynb
+│   ├── database_manager_class.py
+│   └── READme.md
+├── scraper/
+│   ├──scraper_classes/
+│       ├── google_scraper_class.py
+│       ├── opentable_scraper_region_class.py
+│       ├── opentable_scraper_restaurant_list.py
+│       └── yelp_scraper_class.py
+│   ├──scraper_drivers/
+│       ├── google_scraper_driver.py
+│       ├── opentable_scraper_region_driver.py
+│       ├── opentable_scraper_restaurant_driver.py
+│       └── yelp_scraper_driver.py
+│   └── READme.md
+└── READme.md
 
 ```
